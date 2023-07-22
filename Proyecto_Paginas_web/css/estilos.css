@@ -1,0 +1,273 @@
+/* letra personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Oswald&family=Poppins:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;500&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+/* color principal pagina ins */
+.color-ins {
+    background: linear-gradient(6deg, rgba(47, 182, 212, 1) 0%, rgba(19, 68, 114, 1) 100%);
+}
+
+/* -------------------- */
+.logo-ins {
+    width: 190px;
+    height: 80px;
+}
+
+/* ------------------- */
+/* -reglas del nav- */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+}
+
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 95%;
+    top: -7px;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+    margin: 0 0.5rem;
+    animation: flipInX;
+    animation-duration: 0.5s;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin: 0 0.5rem;
+    animation: backInLeft;
+    animation-duration: 0.5s;
+}
+
+.item {
+    border: 0.5px solid rgb(255, 255, 255);
+    padding: 0.5rem;
+    background-color:#2690B3;
+    color: aliceblue;
+}
+
+/* ---------------- */
+/* -fin reglas nav- */
+
+/* ---------------- */
+/* estilos de letras */
+.titulo_servicios {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* letra de elementos de servicios */
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+.titulo_servicios>h1 {
+    color: rgb(29, 108, 149);
+}
+.letra-personalizada {
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 15px;
+}
+
+.letra-personalizada-two {
+    font-family: 'Gemunu Libre', sans-serif;
+    color: #73C2FD;
+    font-size: 30px;
+}
+
+.letra-personalizada-three {
+    color: #73C2FD;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 20px;
+}
+
+.letra-personalizada-title {
+    color: #73C2FD;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 55px;
+}
+
+
+.letra-personalizada-title-two {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 70px;
+}
+
+.letra-personalizada-title-three {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ------------------ */
+/* fin estilos letras */
+
+/* ------------------ */
+/* --servicios-ins-- */
+
+.elementos-servicios-ins {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+}
+
+.elementos-servicios-ins>div {
+    width: 300px;
+    position: relative;
+    margin: 45px auto;
+    padding: 50px;
+    border-radius: 25% 10%;
+    border: 1px solid #5e5e5e;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px #D8D8D8;
+}
+
+/* animaciones de hover.css */
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(2px) translateZ(0);
+    transform: perspective(2px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------ */
+/* fin servicios ins  */
+
+/* ------------------ -*/
+/* section autogestion */
+.section-autogestion {
+    background-color: #fafafa;
+}
+
+.section-item {
+    width: 200px;
+    height: max-content;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    align-content: center;
+}
+
+/* ------------------ -*/
+
+/* ------------------ -*/
+/* btn-top */
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 1;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* ------------------ -*/
+
+/* ------------------ -*/
+/* footer */
+.list {
+    float: left;
+}
+
+.list-item {
+    color: #fafafa;
+    margin: 1px;
+    padding: 1px;
+
+}
+
+hr {
+    width: 95%;
+    margin-left: 2rem;
+    color: #fafafa;
+}
+
+.list-item:hover {
+    color: #000000;
+    animation: pulse;
+    animation-duration: 0.4s;
+}
+
+.icon-redes {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-social {
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+.icon-social :hover {
+    animation: rotateIn;
+    animation-duration: 0.4s;
+}
+
+/* ------------------ -*/
+/* ---fin footer------ */
+
+
+/* tema dark */
+.dark {
+    background-color: #183957;
+}
+
